@@ -36,10 +36,10 @@ async def on_message(message):
   if msg.startswith("&showdatabase"):
     await message.channel.send(db["msgtofbk"])
 
-  if channel.startswith("nsfw"):
-    chance = random.randint(1, 10)
-    if chance >= 7:
-      await message.channel.send(random.choice(["To jest wgl legalne? 0.0", "Milordzie, nie wstyd ci? https://tenor.com/view/movember-skype-emoji-skype-emoticon-pinnacle-mustache-gif-15341782"]))
+  #if channel.startswith("nsfw"):
+  #  chance = random.randint(1, 10)
+  #  if chance >= 7:
+  #    await message.channel.send(random.choice(["To jest wgl legalne? 0.0", "Milordzie, nie wstyd ci? https://tenor.com/view/movember-skype-emoji-skype-emoticon-pinnacle-mustache-gif-15341782"]))
 
   if msg.startswith("fbk") | msg.startswith("fubuki"):
     try:
@@ -88,7 +88,7 @@ async def on_message(message):
     elif " kim " in msg:
       await message.channel.send(fbkKimJest(msg))
     elif " co się " in msg:
-      await message.channel.send("A co się? Co się ctało?")
+      await message.channel.send("A co się? Co się stało?")
     elif "ile" in msg:
       if any(u in msg for u in ["masz lat",]):
         await message.channel.send("Tyle ile średnio ma każda loli w anime, czyli 8969")
