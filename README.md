@@ -1,0 +1,2 @@
+# FBKBot
+Discord Fubuki Bot
